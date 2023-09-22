@@ -1,189 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Giuliana Bezerra</title>
     <!-- Add the Roboto font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/css/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/css/dark.css">
 </head>
 
 <body class="font-roboto bg-gray-100">
     <header>
-
+        <img src="assets/images/banner.jpg" alt="Giuliana Bezerra - Desenvolvimento e Arquitetura de Software" />
     </header>
 
-    <section class="bg-white py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Sobre Mim</h2>
-            <p class="text-lg text-gray-700">
-                Olá, eu sou a Giuliana Bezerra, Arquiteta de Soluções, Instrutora Online, Escritora, Youtuber, e Dev
-                Full Stack
-                no Brasil. Eu criei vários cursos sobre desenvolvimento de software, sinta-se livre para dar uma olhada.
-                Além de programação, eu gosto de música, filmes, livros, artes, e jogos!
+    <section>
+        <h2>Sobre Mim</h2>
+        <p class="text_about_me">
+            Olá, eu sou a Giuliana Bezerra, Arquiteta de Soluções, Instrutora Online, Escritora, Youtuber, e Dev Full Stack no Brasil.
+            Eu criei vários cursos sobre desenvolvimento de software, sinta-se livre para dar uma olhada.
+            Além de programação, eu gosto de música, filmes, livros, artes, e jogos!
             </p>
         </div>
     </section>
 
-    <section class="bg-white py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Vídeos Populares</h2>
-            <div class="flex justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                        <iframe src="https://www.youtube.com/embed/68azMcqPpyo?si=2B7QK7vT0IeCKa3v"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                        <iframe src="https://www.youtube.com/embed/SsWZ4O9iWuo?si=jtjz7JVLyrvxeR0_"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-
-                    <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                        <iframe src="https://www.youtube.com/embed/EQ5EwIYsgIE?si=kuJLCfq7iwYgXDFp"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section>
+        <h2>Vídeos Populares</h2>
+        <ul class="yt_cards">
+            <li class="yt_card">
+                <iframe src="https://www.youtube.com/embed/68azMcqPpyo?si=2B7QK7vT0IeCKa3v"
+                    title="O que você deveria saber sobre Oauth 2.0 e OpenID!"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen">
+                </iframe>
+            </li>
+            <li class="yt_card">
+                <iframe src="https://www.youtube.com/embed/SsWZ4O9iWuo?si=jtjz7JVLyrvxeR0_"
+                    title="Desafio Vagas: API de lugares com Spring Boot!"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen">
+                </iframe>
+            </li>
+            <li class="yt_card">
+                <iframe src="https://www.youtube.com/embed/EQ5EwIYsgIE?si=kuJLCfq7iwYgXDFp"
+                    title="Aulão: Proteja o acesso aos seus serviços web com o Spring Security 6!"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen">
+                </iframe>
+            </li>
+        </ul>
     </section>
 
-
-    <section class="bg-white py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Meus Cursos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Course 1 -->
-                <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                    <a
-                        href="https://www.udemy.com/course/curso-para-desenvolvimento-de-jobs-com-spring-batch/?referralCode=8743E206FA9240686B20">
-                        <img src="https://img-b.udemycdn.com/course/750x422/2867350_5193_3.jpg" alt="Course Thumbnail"
-                            class="mb-4">
-                    </a>
-                    <h3 class="text-xl font-semibold text-gray-800">
-                        <a
-                            href="https://www.udemy.com/course/curso-para-desenvolvimento-de-jobs-com-spring-batch/?referralCode=8743E206FA9240686B20">
-                            Curso para desenvolvimento de jobs com Spring Batch
+    <section>
+        <div class="container">
+            <h2>Meus Cursos</h2>
+            <ul class="cards">
+                <li class="cards_item">
+                    <div class="card">
+                        <a href="https://www.udemy.com/course/curso-para-desenvolvimento-de-jobs-com-spring-batch/?coupomCode=MYWEBSITE1023">
+                            <img class="card_image" src="https://img-b.udemycdn.com/course/750x422/2867350_5193_3.jpg" alt="Imagem do curso Curso para desenvolvimento de jobs com Spring Batch">
                         </a>
-                    </h3>
-                    <p class="text-gray-600">Aprenda a criar Jobs Spring Batch para resolver problemas reais das
-                        empresas de processamento de dados!</p>
-                    <br />
-                    <div class="text-sm text-gray-400 line-through">R$ 269,90</div>
-                    <div class="text-2xl text-green-600 font-bold">R$ 49,90</div>
-                    <p class="text-green-600 font-semibold">Cupom: MYWEBSITE1023</p>
-                </div>
 
-                <!-- Course 2 -->
-                <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                    <a
-                        href="https://www.udemy.com/course/otimizacao-de-desempenho-para-jobs-spring-batch/?referralCode=EE9FA1CDD3AF90B0198D">
-                        <img src="https://img-b.udemycdn.com/course/750x422/3527200_dc9b_2.jpg" alt="Course Thumbnail"
-                            class="mb-4">
-                    </a>
-                    <h3 class="text-xl font-semibold text-gray-800">
-                        <a
-                            href="https://www.udemy.com/course/otimizacao-de-desempenho-para-jobs-spring-batch/?referralCode=EE9FA1CDD3AF90B0198D">
-                            Otimização de desempenho para jobs Spring Batch
-                        </a>
-                    </h3>
-                    <p class="text-gray-700">Aplique técnicas de escalabilidade para maximizar a performance dos seus
-                        jobs Spring Batch!</p>
-                    <br />
-                    <div class="text-sm text-gray-400 line-through">R$ 269,90</div>
-                    <div class="text-2xl text-green-600 font-bold">R$ 49,90</div>
-                    <p class="text-green-600 font-semibold">Cupom: MYWEBSITE1023</p>
-                </div>
-
-                <!-- Course 3 -->
-                <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                    <a
-                        href="https://www.udemy.com/course/testes-automatizados-na-pratica-com-spring-boot/?referralCode=7F6C5AA14AE558497FE0">
-                        <img src="https://img-b.udemycdn.com/course/750x422/4708376_ce54.jpg" class="mb-4">
-                    </a>
-                    <h3 class="text-xl font-semibold text-gray-800">
-                        <a
-                            href="https://www.udemy.com/course/testes-automatizados-na-pratica-com-spring-boot/?referralCode=7F6C5AA14AE558497FE0">
-                            Testes automatizados na prática com Spring Boot
-                        </a>
-                    </h3>
-                    <p class="text-gray-700">Tudo o que você precisa saber para começar a testar as suas aplicações
-                        Spring Boot!</p>
-                    <br />
-                    <div class="text-sm text-gray-400 line-through">R$ 269,90</div>
-                    <div class="text-2xl text-green-600 font-bold">R$ 49,90</div>
-                    <p class="text-green-600 font-semibold">Cupom: MYWEBSITE1023</p>
-                </div>
-
-                <!-- Course 4 -->
-                <div class="bg-gray-200 p-6 rounded-lg shadow-md">
-                    <a
-                        href="https://www.udemy.com/course/api-completa-com-adonisjs-5-typescript-e-tdd/?referralCode=291DB777C40F94BEB30A">
-                        <img src="https://img-b.udemycdn.com/course/750x422/4147934_5c3c_2.jpg" class="mb-4">
-                    </a>
-                    <h3 class="text-xl font-semibold text-gray-800">
-                        <a
-                            href="https://www.udemy.com/course/api-completa-com-adonisjs-5-typescript-e-tdd/?referralCode=291DB777C40F94BEB30A">
-                            API completa com AdonisJS 5, Typescript e TDD
-                        </a>
-                    </h3>
-                    <p class="text-gray-700">Conheça um dos frameworks Node mais populares para a construção de APIs!
-                    </p>
-                    <br />
-                    <div class="text-sm text-gray-400 line-through">R$ 269,90</div>
-                    <div class="text-2xl text-green-600 font-bold">R$ 49,90</div>
-                    <p class="text-green-600 font-semibold">Cupom: MYWEBSITE1023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Minhas Redes</h2>
-            <ul class="flex justify-center space-x-6">
-                <li>
-                    <a href="https://www.linkedin.com/in/giulianabezerra" target="_blank"
-                        class="text-blue-600 hover:underline">
-                        LinkedIn
-                    </a>
+                        <div class="card_content">
+                            <a class="card_title"
+                                href="https://www.udemy.com/course/curso-para-desenvolvimento-de-jobs-com-spring-batch/?coupomCode=MYWEBSITE1023">
+                                Curso para desenvolvimento de jobs com Spring Batch
+                            </a>
+                            <div class="card_text_container">
+                                <p class="card_text">
+                                    Aprenda a criar Jobs Spring Batch para resolver problemas reais das
+                                    empresas de processamento de dados!
+                                </p>
+                                <div class="card_text_item">
+                                    <div class="actual_price">R$ 269,90</div>
+                                    <div class="price">R$ 34,90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/@giulianabezerra" target="_blank"
-                        class="text-red-600 hover:underline">
-                        YouTube
-                    </a>
+                <li class="cards_item">
+                    <div class="card">
+                        <a href="https://www.udemy.com/course/otimizacao-de-desempenho-para-jobs-spring-batch/?coupomCode=MYWEBSITE1023">
+                            <img class="card_image" src="https://img-b.udemycdn.com/course/750x422/3527200_dc9b_2.jpg" alt="Imagem do curso Otimização de desempenho para jobs Spring Batch">
+                        </a>
+                        <div class="card_content">
+                            <div>
+                                <a class="card_title"
+                                    href="https://www.udemy.com/course/otimizacao-de-desempenho-para-jobs-spring-batch/?coupomCode=MYWEBSITE1023">
+                                    Otimização de desempenho para jobs Spring Batch
+                                </a>
+                                <p class="card_text">Aplique técnicas de escalabilidade para maximizar a performance dos seus
+                                    jobs Spring Batch!
+                                </p>
+                            </div>
+                            <div>
+                                <div class="card_text_item">
+                                    <div class="actual_price">R$ 269,90</div>
+                                    <div class="price">R$ 34,90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="https://medium.com/@giulianabezerra" target="_blank"
-                        class="text-black-600 hover:underline">
-                        Medium
-                    </a>
+                <li class="cards_item">
+                    <div class="card">
+                        <a
+                            href="https://www.udemy.com/course/testes-automatizados-na-pratica-com-spring-boot/?coupomCode=MYWEBSITE1023">
+                            <img class="card_image" src="https://img-b.udemycdn.com/course/750x422/4708376_ce54.jpg" alt="Imagem do curso Testes automatizados na prática com Spring Boot">
+                        </a>
+
+                        <div class="card_content">
+                            <div>
+                                <a class="card_title"
+                                    href="https://www.udemy.com/course/testes-automatizados-na-pratica-com-spring-boot/?coupomCode=MYWEBSITE1023">
+                                    Testes automatizados na prática com Spring Boot
+                                </a>
+                                <p class="card_text">Tudo o que você precisa saber para começar a testar as suas aplicações
+                                    Spring Boot!
+                                </p>
+                            </div>
+                            <div>
+                                <div class="actual_price">R$ 269,90</div>
+                                <div class="price">R$ 34,90</div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="https://github.com/giuliana-bezerra" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-800 hover:underline">
-                        GitHub
-                    </a>
+                <li class="cards_item">
+                    <div class="card">
+                        <a
+                            href="https://www.udemy.com/course/api-completa-com-adonisjs-5-typescript-e-tdd/?coupomCode=MYWEBSITE1023">
+                            <img class="card_image" src="https://img-b.udemycdn.com/course/750x422/4147934_5c3c_2.jpg" alt="Imagem do curso API completa com AdonisJS 5, Typescript e TDD">
+                        </a>
+
+                        <div class="card_content">
+                            <div>
+                                <a class="card_title"
+                                    href="https://www.udemy.com/course/api-completa-com-adonisjs-5-typescript-e-tdd/?coupomCode=MYWEBSITE1023">
+                                    API completa com AdonisJS 5, Typescript e TDD
+                                </a>
+                                <p class="card_text">Conheça um dos frameworks Node mais populares para a construção de APIs!</p>
+                            </div>
+                            <div >
+                                <div class="actual_price">R$ 269,90</div>
+                                <div class="price">R$ 34,90</div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <footer class="text-white py-4">
-        <div class="container mx-auto">
-            <p class="text-center">contato@giulianabezerra.com.br</p>
-        </div>
+    <footer>
+        <p class="text-center">Giuliana Bezerra - <a href="mailto:contato@giulianabezerra.com.br">contato@giulianabezerra.com.br</a></p>
+        <ul>
+            <li>
+                <span>Minhas redes:</span>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/giulianabezerra" target="_blank"
+                    class="text-blue-600 hover:underline" aria-label="Meu perfil no LinkedIn">
+                    <img src="assets/images/In-Blue-2-Color.png" width="32" alt="Logo do LinkedIn" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@giulianabezerra" target="_blank"
+                    class="text-red-600 hover:underline" aria-label="Meu canal no YouTube">
+                    <img src="assets/images/yt_icon_rgb.png" width="32" alt="Logo do YouTube" />
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@giulianabezerra" target="_blank"
+                    class="text-black-600 hover:underline" alt="Minha página no Medium">
+                    <img src="assets/images/Medium-Symbol-White-RGB@1x.png" width="32" alt="Logo do Medium" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/giuliana-bezerra" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-800 hover:underline" aria-label="Meu perfil no Github">
+                    <img src="assets/images/github-mark-white.png" width="32" alt="Logo do Github" />
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 

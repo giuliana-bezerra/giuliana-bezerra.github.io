@@ -1,0 +1,190 @@
+/* Add your CSS styling here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--fontColor);
+}
+
+header {
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+section {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--foreground);
+    /*box-shadow: 0 .5rem .7rem 0 #d3d3d3;*/
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_about_me {
+    line-height: 1.75rem;
+}
+
+.yt_cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.yt_card {
+    display: flex;
+    background-color: var(--cardBackground);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 1rem 0 0;
+    padding: 16px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.cards_item {
+    display: flex;
+    padding: 0 1rem 1rem 0;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+      width: 33%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+      width: 22%;
+    }
+}
+
+.card {
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--cardBackground);
+}
+
+.card_image {
+    max-width: 100%;
+    height: auto;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cardBackground);
+    padding: 1rem;
+    height: 100%;
+}
+
+.card_title {
+    color: var(--fontColor);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0px;
+    text-decoration: none;
+    line-height: 1.75rem;
+}
+
+.card_text {
+    color: var(--fontColor);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.actual_price {
+    color: rgba(156,163,175,1);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-decoration: line-through;
+}
+
+.price {
+    color: var(--priceColor);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+footer {
+    background-color: #282a36;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #3B3D59;
+}
+
+footer p {
+    text-align: left;
+    align-self: center;
+}
+
+footer p a {
+    color: white;
+}
+
+footer ul {
+    text-align: right;
+    list-style: none;
+    display: flex;
+    padding-right: 5px;
+}
+
+footer ul li {
+    padding-right: 15px;
+    align-self: center;
+}
+
+footer ul li:last-child {
+    padding-right: 0;
+}
+
+footer ul li a img {
+    vertical-align: middle;
+}
