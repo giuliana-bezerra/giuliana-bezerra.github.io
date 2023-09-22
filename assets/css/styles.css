@@ -152,10 +152,11 @@ a {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
     background-color: #282a36;
     color: white;
     padding: 1rem 2rem;
-    display: flex;
     justify-content: space-between;
     border-top: 1px solid #3B3D59;
 }
@@ -187,4 +188,16 @@ footer ul li:last-child {
 
 footer ul li a img {
     vertical-align: middle;
+}
+
+@media (max-width: 765px) {
+    footer {
+      flex-direction: column;
+    }
+
+    footer ul {
+        align-self: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
